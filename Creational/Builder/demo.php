@@ -108,7 +108,7 @@ class PostgresQueryBuilder extends MysqlQueryBuilder
     // các hàm khác ...
 }
 
-// Client Code
+// Director
 function clientCode(SQLQueryBuilder $queryBuilder)
 {
     $query = $queryBuilder
@@ -118,6 +118,7 @@ function clientCode(SQLQueryBuilder $queryBuilder)
         ->limit(10, 20)
         ->generateSQL();
 
+    //Product
     echo $query;
 }
 

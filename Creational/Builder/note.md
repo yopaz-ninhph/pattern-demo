@@ -12,6 +12,10 @@
 3. **Cấu trúc**
 - Builder: thường là abtract class hoặc interface để định nghĩa các phương thức của class
 - ConcreteBuilder: Là các lớp triển khai của builder. Mỗi class này sẽ biểu diễn cụ thể đối tượng
-- Client: là phần sử dụng builder để tạo ra 1 đối tượng cụ thể.
+- Director: là phần sử dụng builder để tạo ra 1 đối tượng cụ thể.
+- Product: là đối tượng phức tạp cuối cùng được xây dựng
+4. **Nhược điểm**
+- Cấu trúc có thể trở nên phức tạp hơn khi có nhiều lớp Builder.
+- Có thể dẫn đến việc tạo ra quá nhiều lớp, đặc biệt là khi chỉ cần một đối tượng đơn giản.
 
 Tham khảo: https://refactoring.guru/design-patterns/builder
